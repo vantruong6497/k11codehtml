@@ -333,7 +333,8 @@ p {
     color: var(--ct-menu-item-active);
   }
   #sidebar-menu > ul > li ul {
-    padding-left: 34px;
+    margin-top: 7px;
+    padding-left: 47px;
     list-style: none;
   }
   #sidebar-menu > ul > li ul ul {
@@ -353,22 +354,29 @@ p {
     font-weight: 500;
   }
   
-  #sidebar-menu .menuitem-active .active {
+  #sidebar-menu .menuitem-active > a {
     background: rgba(215,38,80,0.1);
   }
   
-  #sidebar-menu .menuitem-active .active i::before {
+  #sidebar-menu .menuitem-active a i::before {
     color: #D72650;
   }
 
-  
+  #sidebar-menu .menuitem-active .menu-arrow {
+    color: #D72650;
+  }
+
+  .nav-second-level li {
+    margin-bottom: 7px;
+  }  
 .nav-second-level li a {
-    padding: 8px 20px;
+    padding: 4px 11px;
     color: var(--ct-menu-item);
     display: block;
     position: relative;
     transition: all 0.4s;
-    font-size: 0.875rem;
+    font-size: 14px;
+    font-weight: 600;
   }
   .nav-second-level li a:focus,
   .nav-second-level li a:hover {
@@ -811,6 +819,25 @@ p {
   padding: 24px 40px 20px 30px;
 }
 
+.staffs .card-body {
+  padding: 35px 31px 31px 30px;
+}
+
+.btn-create {
+  border: 1.5px solid #D72650;
+  font-size: 12px;
+  font-weight: 600;
+  color: #151519;
+border-radius: 12px;
+padding: 8px 10px;
+margin-top: -2px;
+}
+
+.btn-create:hover {
+  background: #D72650;
+  color: #fff;
+}
+
 .side-order .card-body {
   padding: 32px 31px 26px 30px;
 }
@@ -898,10 +925,19 @@ color: #151519;
   .booking {
     margin: 20px -10px 0;
   }
+
+  .booking.outlets {
+    margin: 24px -10px 0;
+  }
+
   .booking .card {
     box-shadow: 0px 2px 8px rgba(28, 36, 51, 0.16);
     width: calc(50% - 20px);
     margin: 0 10px 20px;
+  }
+
+  .outlets .card {
+    margin: 0 10px 26px;
   }
 
   .booking .card:nth-child(3) , .booking .card:nth-child(4) {
@@ -974,6 +1010,13 @@ font-size: 12px;
     margin: 0 8px;
     font-weight: 600;
 font-size: 12px;
+  }
+  .outlets .card .card-body .info {
+    padding-top: 14px;
+  }
+  .outlets .card .card-body .info .name {
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .card.list-order {
@@ -1094,7 +1137,7 @@ font-size: 32px;
   }
 
   .filter-top {
-    margin-top: 20px;
+    margin-top: 24px;
   }
   .filter-top .form-control {
 
@@ -1114,7 +1157,14 @@ font-size: 32px;
     border-radius: 5px;
   }
   .table-responsive {
-    margin-top: 20px;
+    margin-top: 11px;
+  }
+
+  .table-responsive thead tr th {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #818089;
   }
   .table-responsive td img {
     width: 40px;
@@ -1122,6 +1172,9 @@ font-size: 32px;
     border-radius: 50%;
     margin-right: 10px;
     object-fit: cover;
+  }
+  .table > :not(caption) > * > * {
+    vertical-align: middle;
   }
 td ul li {
   margin: 0 10px;
@@ -1134,4 +1187,115 @@ td ul li a {
   td ul li a span {
     display: block;
     font-size: 20px;
+  }
+
+  .outlets .card .card-body .image{
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  .outlets .card .card-body .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outlets .card .card-body {
+    padding: 19px 19px 20px;
+  }
+
+  .outlets .card .card-body .info .map{
+    margin: 6px 2px 19px;
+  }
+  .outlets .card .card-body .info .map span {
+    margin-right: 8px;
+  }
+
+  .outlets .card .card-body .info ul li {
+    padding: 6px 13px;
+    font-weight: 400;
+font-size: 12px;
+background: rgba(195,194,209,0.2);
+border-radius: 8px;
+color: #151519;
+margin-right: 6px;
+  }
+  .outlets .card .card-body .info ul li svg {
+    margin-right: 5px;
+  }
+  .outlets .card .card-body .info ul li span {
+    margin-right: 9px;
+  }
+
+  .outlets .card .card-body .info ul li.open {
+    background: rgba(215,38,80,0.1);
+    color: #D72650;
+
+
+  }
+
+  .card .card-body .unit {
+      background: #D72650;
+      padding: 6px 9px;
+      border-radius: 8px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+  }
+
+  .fb-order .card-body {
+    padding: 45px 31px 31px 30px;
+}
+
+.orders {
+  margin:  24px -10px;
+  
+}
+  .orders .card {
+    width: calc(33.33% - 20px);
+    box-shadow: 0px 2px 8px rgba(28, 36, 51, 0.16);
+    margin: 0 10px 20px;
+  } 
+
+  .orders .card .card-body .image {
+    width: 100%;
+    height: 100%;
+    max-height: 186px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .orders .card .card-body .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .quality {
+    min-width: 103px;
+    width: 103px;
+    height: 34px;
+    font-size: 12px;
+font-weight: 400;
+    background: rgba(195,194,209,0.2);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quality span {
+    margin-left: 5px;
+    font-weight: 14px;
+    font-weight: 600;
+    color: #D72650;
   }
