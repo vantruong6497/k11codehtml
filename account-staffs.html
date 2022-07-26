@@ -811,31 +811,80 @@
         </div><!-- /.modal -->
     
         <!-- Modal -->
-        <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade modal-create" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 
                   <div class="modal-body">
+
+                    <h5>Create An Account</h5>
                       <form>
-                          <div class="mb-3">
-                              <label for="name" class="form-label">Name</label>
-                              <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <div class="image-input">
+                                <input type="file" accept="image/*" id="imageInput">
+                                <label for="imageInput" class="image-button"><i class="far fa-image"></i>Upload Image</label>
+                                <img src="" class="image-preview">
+                                <span class="change-image">Choose different image</span>
+                              </div>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Position</label>
+                              <select class="form-select" required >
+                                <option  selected>Waitress</option>
+                                <option >Waitress</option>
+                                <option >Waitress</option>
+                                <option >Waitress</option>
+
+                              </select>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Branch</label>
+                              <select class="form-select" required >
+                                <option  selected>KR11@ST113</option>
+                                <option >KR11@ST113</option>
+
+                              </select>
+                            </div>
                           </div>
-                          <div class="mb-3">
-                              <label for="position" class="form-label">Position</label>
-                              <input type="text" class="form-control" id="position" placeholder="Enter position">
+
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="Name" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="Name" value="Anthony Jee">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" value="anthonyjee231@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Limited Accessibility</label>
+                              <select class="form-select" required >
+                                <option  selected>Can Assign Room</option>
+                                <option   >Can Assign Room</option>
+          
+
+                              </select>
+                            </div>
                           </div>
-                          <div class="mb-3">
-                              <label for="company" class="form-label">Company</label>
-                              <input type="text" class="form-control" id="company" placeholder="Enter company">
+
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-light waves-effect waves-light">Save</button>
+                            <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-dismiss="modal">Cancel</button>
                           </div>
-                          <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+
+                          
+
                           </div>
+                          
+                          
       
-                              <button type="submit" class="btn btn-light waves-effect waves-light">Save</button>
-                              <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-dismiss="modal">Cancel</button>
+                           
                       </form>
                   </div>
               </div><!-- /.modal-content -->
