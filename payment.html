@@ -7,7 +7,8 @@
     <title>KR11 Karaoke Room Booking App</title>
 
     <link rel="stylesheet" href="assets/css/icons.min.css" />
-    <link rel="stylesheet" href="assets/font.css" />
+    <link rel="stylesheet" href="assets/icomoon/style.css">
+
     <link
       href="assets/libs/fullcalendar/main.min.css"
       rel="stylesheet"
@@ -27,29 +28,6 @@
       <!-- Topbar Start -->
       <div class="navbar-custom">
         <ul class="list-unstyled topnav-menu float-end mb-0">
-          <!-- <li class="dropdown d-inline-block d-lg-none">
-            <a
-              class="nav-link dropdown-toggle arrow-none waves-effect waves-light"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="false"
-              aria-expanded="false"
-            >
-              <i class="fe-search noti-icon"></i>
-            </a>
-            <div class="dropdown-menu dropdown-lg dropdown-menu-end p-0">
-              <form class="p-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search ..."
-                  aria-label="Recipient's username"
-                />
-              </form>
-            </div>
-          </li> -->
-
           <li class="dropdown notification notification-list topbar-dropdown">
             <a
               class="nav-link dropdown-toggle waves-effect waves-light"
@@ -278,7 +256,7 @@
 
               <li>
                 <a href="#email" data-bs-toggle="collapse">
-                  <i class="icon-users"></i>
+                  <i class="icon-friends"></i>
                   <span> Account </span>
                   <span class="menu-arrow"></span>
                 </a>
@@ -306,32 +284,47 @@
                       <a href="outlets.html">Outlets view</a>
                     </li>
                     <li>
+                      <a href="list-room.html">Lists Rooms</a>
+                    </li>
+                    <li>
+                      <a href="booking-details.html">Booking Details</a>
+                    </li>
+                    <li>
                       <a href="fb-orders.html">F&B Orders</a>
+                    </li>
+                    <li>
+                      <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                      <a href="list-food.html">Lists Food</a>
+                    </li>
+                    <li>
+                      <a href="list-items-details.html">Lists Items Details</a>
                     </li>
                   </ul>
                 </div>
               </li>
 
               <li>
-                <a href="#">
-                  <i class="icon-Wallet"></i>
+                <a href="payment.html">
+                  <i class="icon-wallet"></i>
                   <span> Payment </span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="reportdaily.html">
                   <i class="icon-document"></i>
                   <span> Report Daily </span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="notification.html">
                   <i class="icon-notification"></i>
                   <span> Notification </span>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="promotion.html">
                   <i class="icon-ticket"></i>
                   <span> Promotion </span>
                 </a>
@@ -346,10 +339,10 @@
                 <div class="collapse" id="media">
                   <ul class="nav-second-level">
                     <li>
-                      <a href="contacts-list.html">Members List</a>
+                      <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                      <a href="contacts-profile.html">Profile</a>
+                      <a href="banner.html">Banner</a>
                     </li>
                   </ul>
                 </div>
@@ -357,7 +350,7 @@
 
               <li>
                 <a href="#">
-                  <i class="icon-settings"></i>
+                  <i class="icon-setting"></i>
                   <span> Settings </span>
                 </a>
               </li>
@@ -555,368 +548,261 @@
                     
                 </div>
                 <div class="row mt-30">
-                  <div class="col-lg-0 d-none">
-                      <button class="btn btn-lg font-16 btn-success w-100" id="btn-new-event"><i class="fa fa-plus me-1"></i> Create New</button>
-                      
-                      <div id="external-events">
-                          <br>
-                          <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                          <div class="external-event bg-primary" data-class="bg-primary">
-                              <i class="mdi mdi-checkbox-blank-circle me-2 vertical-middle"></i>New Theme Release
+
+                  <div class="col-lg-9">
+                      <div class="card">
+                          <div class="card-body">
+                            <h3 class="header-title mb-3">View Payment History</h3>
+
+                            <div class="filter-top d-flex">
+                              <div class="app-search-box">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search Keyword" id="top-search">
+                                    <button class="btn input-group-text" type="submit">
+                                        <i class="fe-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Payment menthod</option>
+                                <option value="1">KR11@ ST11</option>
+                                <option value="1">KR11@ ST12</option>
+                                <option value="2">KR11@ ST13</option>
+                                <option value="3">KR11@ ST14</option>
+                              </select>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>All Branch</option>
+                                <option value="1">KR11@ ST11</option>
+                                <option value="2">KR11@ ST12</option>
+                                <option value="3">KR11@ ST13</option>
+                                <option value="3">KR11@ ST14</option>
+                              </select>
+                            </div>
+      
+                            <div class="table-responsive">
+                              <table class="table table-hover mb-0">
+                                  <thead>
+                                  <tr>
+                                      <th>ID</th>
+                                      <th>Name staffs</th>
+                                      <th>Checkout</th>
+                                      <th>Branch</th>
+                                      <th>payment</th>
+                                      <th>Total</th>
+                                      <th>Rerund</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>01</td>
+                                          <td><img src="assets/images/users/user-1.jpg" alt=""> Anthony Jee</td>
+                                          <td class="primary">10:15 PM, March 15</td>
+                                          <td>KR11@ ST13</td>
+                                          <td><span class="access">Cash</span></td>
+                                          <td class="success">20.00 $</td>
+                                          <td class="primary">
+                                            20.00 $
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td>02</td>
+                                        <td><img src="assets/images/users/user-2.jpg" alt=""> Naomi Bishop</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Cash</span></td>
+                                        <td class="success">102.00 $</td>
+                                        <td class="primary">
+                                 
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>03</td>
+                                        <td><img src="assets/images/users/user-3.jpg" alt=""> Ted Pascall</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Cash</span></td>
+                                        <td class="success">103.00 $</td>
+                                        <td class="primary">
+                                          5.00 $
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>04</td>
+                                        <td><img src="assets/images/users/user-4.jpg" alt="">Alanna Gilbert</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Banking</span></td>
+                                        <td class="success">103.00 $</td>
+                                        <td class="primary">
+                                          
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>05</td>
+                                        <td><img src="assets/images/users/user-5.jpg" alt="">Oswald Graves</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Banking</span></td>
+                                        <td class="success">103.00 $</td>
+                                        <td class="primary">
+                                  
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>06</td>
+                                        <td><img src="assets/images/users/user-6.jpg" alt="">Earl Hall</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Cash</span></td>
+                                        <td class="success">103.00 $</td>
+                                        <td class="primary">
+                                          10.00 $
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>07</td>
+                                        <td><img src="assets/images/users/user-7.jpg" alt=""> Camilla Gray</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Banking</span></td>
+                                        <td class="success">103.00 $</td>
+                                        <td class="primary">
+                              
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>08</td>
+                                        <td><img src="assets/images/users/user-8.jpg" alt=""> Francis Hill</td>
+                                        <td class="primary">10:15 PM, March 15</td>
+                                        <td>KR11@ ST13</td>
+                                        <td><span class="access">Cash</span></td>
+                                        <td class="success">123.00 $</td>
+                                        <td class="primary">
+                                  
+                                        </td>
+                                      </tr>
+
+    
+                                  </tbody>
+                              </table>
                           </div>
-                          <div class="external-event bg-pink" data-class="bg-pink">
-                              <i class="mdi mdi-checkbox-blank-circle me-2 vertical-middle"></i>My Event
-                          </div>
-                          <div class="external-event bg-warning" data-class="bg-warning">
-                              <i class="mdi mdi-checkbox-blank-circle me-2 vertical-middle"></i>Meet manager
-                          </div>
-                          <div class="external-event bg-purple" data-class="bg-danger">
-                              <i class="mdi mdi-checkbox-blank-circle me-2 vertical-middle"></i>Create New theme
+             
                           </div>
                       </div>
-
-                          <!-- checkbox -->
-                          <div class="form-check mt-3">
-                          <input type="checkbox" class="form-check-input" id="drop-remove">
-                          <label class="form-check-label" for="drop-remove">Remove after drop</label>
-                      </div>
-
-                  </div> <!-- end col-->
-
-                  <div class="col-lg-12">
-                      <div class="card calendar-b">
-                          <div class="card-body">
-                            <h3 class="header-title mb-3">Calendar Bookings</h3>
-                            <ul class="list-cal float-end">
-                              <li><span class="bg-active"></span>ACTIVE</li>
-                              <li><span class="bg-assigned"></span>ASSIGNED</li>
-                              <li><span class="bg-need-assigned"></span>Need Assign</li>
-                              <li><span class="bg-cancel"></span>cancel</li>
-                              <li><span class="bg-complete"></span>Complete</li>
-                            </ul>
-
-                            <div id='calendar'></div>
-
-                          </div> <!-- end card body-->
-                      </div> <!-- end card -->
-                  </div> <!-- end col -->
-
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h3 class="header-title">Bookings</h3>
-                      <a href="#" class="btn-view float-end">View all</a>
-
-                      <div class="d-flex flex-wrap booking">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="name d-flex">
-                              <h6>Anthony Jee</h6>
-                              <div class="d-flex"><p>Golden member</p> <div class="icon"><img src="assets/images/logo/logo.png" alt=""></div></div>
-                            </div>
-  
-                            <div class="info d-flex">
-                              <div class="info-b">
-                                <p>Room Size</p>
-                                <h6>Large</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </div>
-                            </div>
-                            <div class="group-btn">
-                              <a href="#" class="btn-action active">Asign Room</a>
-                              <a href="#" class="btn-action">Decline</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="name d-flex">
-                              <h6>Anthony Jee</h6>
-                              <div class="d-flex"><p>Golden member</p> <div class="icon"><img src="assets/images/logo/logo.png" alt=""></div></div>
-                            </div>
-  
-                            <div class="info d-flex">
-                              <div class="info-b">
-                                <p>Room Size</p>
-                                <h6>Large</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </div>
-                            </div>
-                            <div class="group-btn">
-                              <a href="#" class="btn-action active">Asign Room</a>
-                              <a href="#" class="btn-action">Decline</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="name d-flex">
-                              <h6>Anthony Jee</h6>
-                              <div class="d-flex"><p>Golden member</p> <div class="icon"><img src="assets/images/logo/logo.png" alt=""></div></div>
-                            </div>
-  
-                            <div class="info d-flex">
-                              <div class="info-b">
-                                <p>Room Size</p>
-                                <h6>Large</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </div>
-                            </div>
-                            <div class="group-btn">
-                              <a href="#" class="btn-action active">Asign Room</a>
-                              <a href="#" class="btn-action">Decline</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="name d-flex">
-                              <h6>Anthony Jee</h6>
-                              <div class="d-flex"><p>Golden member</p> <div class="icon"><img src="assets/images/logo/logo.png" alt=""></div></div>
-                            </div>
-  
-                            <div class="info d-flex">
-                              <div class="info-b">
-                                <p>Room Size</p>
-                                <h6>Large</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </div>
-                              <div class="info-b">
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </div>
-                            </div>
-                            <div class="group-btn">
-                              <a href="#" class="btn-action active">Asign Room</a>
-                              <a href="#" class="btn-action">Decline</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                </div>
 
-                <div class="col-lg-6">
-                  <div class="card side-order">
-                    <div class="card-body">
-                      <h3 class="header-title">Side Order</h3>
-                      <a href="#" class="btn-view float-end">View all(5)</a>
+                  <div class="col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="header-title mb-3">Payment Menthod</h3>
+                        <div class="card">
+                          <div class="card-body">
+                            <h4>KR11@ ST13</h4>
+                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
 
-                      <div class="card list-order">
-                        <div class="card-body">
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-01.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">Sweet cheezy pizza </h6>
-
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
-
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
+                            <div class="group-check">
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >All</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Card</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Banking</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Cash</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                            </div>
                           </div>
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-02.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">
-                                  Stir-Fried Cinnamon
-                                </h6>
+                        </div>
 
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
+                        <div class="card">
+                          <div class="card-body">
+                            <h4>KR11@ ST13</h4>
+                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
 
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
+                            <div class="group-check">
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >All</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Card</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Banking</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Cash</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                            </div>
                           </div>
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-03.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">Thyme Pigeon</h6>
+                        </div>
 
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
+                        <div class="card">
+                          <div class="card-body">
+                            <h4>KR11@ ST13</h4>
+                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
 
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
+                            <div class="group-check">
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >All</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Card</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Banking</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Cash</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                            </div>
                           </div>
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-04.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">Stewed Mushroom </h6>
+                        </div>
 
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
+                        <div class="card">
+                          <div class="card-body">
+                            <h4>KR11@ ST13</h4>
+                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
 
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-05.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">Apricot Salmon</h6>
-
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
-
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="order">
-                            <ul class="list d-flex">
-                              <li class="image"><img src="assets/images/menu/order-06.png" alt=""></li>
-                              <li class="one">
-                                <h6 class="name">Hazelnut Fruitcake</h6>
-
-                                <div class="d-flex">
-                                  <p>$12.5</p>
-                                  <p>X2</p>
-                                </div>
-                                
-                              </li>
-
-                              <li>
-                                <p>Branch</p>
-                                <h6>KR11@ ST13</h6>
-                              </li>
-                              <li>
-                                <p>Date</p>
-                                <h6>25 Jul 2022</h6>
-                              </li>
-                              <li>
-                                <p>Time</p>
-                                <h6>6:00pm - 11:00pm</h6>
-                              </li>
-                            </ul>
+                            <div class="group-check">
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >All</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Card</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Banking</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                              <div class="form-check form-switch">
+                                <label class="form-check-label" >Cash</label>
+                                <input type="checkbox" class="form-check-input"  >
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
-                </div>
-                
+                  </div>
+
               </div>
                 </div>
                 <div class="main-right">
@@ -1439,37 +1325,7 @@
     <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
 
-    <script src="assets/libs/datepicker/datepickerpluigin.js"></script>
-    <script src="assets/libs/datepicker/datepicker.js"></script>
 
-    <script src="assets/libs/moment/min/moment.min.js"></script>
-    <script src="assets/libs/fullcalendar/main.min.js"></script>
-     <!-- Calendar init -->
-     <script src="assets/js/pages/calendar.init.js"></script>
-
-    <!-- <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-  initialView: 'timelineWeek'
-});
-        calendar.render();
-      });
-
-    </script> -->
-
-
-
-    <!--Morris Chart-->
-    <!-- <script src="assets/libs/morris.js06/morris.min.js"></script>
-    <script src="assets/libs/raphael/raphael.min.js"></script> -->
-
-    <!-- Dashboar init js-->
-    <!-- <script src="assets/js/pages/dashboard.init.js"></script> -->
-    
-
-    <!-- App js-->
     <script src="assets/js/shortcode.js"></script>
     <script src="assets/js/app.min.js"></script>
   </body>

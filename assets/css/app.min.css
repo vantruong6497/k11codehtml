@@ -6,7 +6,7 @@
   --ct-link-hover-color: #D72650;
   --ct-border-color: #dee2e6;
   --ct-box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
-  --ct-box-shadow-sm: 0px 3px 3px rgba(28, 36, 51, 0.1);
+  --ct-box-shadow-sm: 0px 2px 6px rgba(28, 36, 51, 0.14);
   --ct-box-shadow-lg: 0 0 45px 0 rgba(0, 0, 0, 0.12);
   --ct-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --ct-component-active-color: #fff;
@@ -2119,7 +2119,6 @@ progress {
 }
 .table-hover > tbody > tr:hover > * {
   --ct-table-accent-bg: var(--ct-table-hover-bg);
-  color: var(--ct-table-hover-color);
 }
 .table-primary {
   --ct-table-bg: #e3f0fe;
@@ -2283,7 +2282,7 @@ progress {
   border: 1px solid var(--ct-input-border-color);
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 12px;
+  border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2460,7 +2459,7 @@ textarea.form-control-lg {
   background-position: right 0.9rem center;
   background-size: 14px 12px;
   border: 1px solid var(--ct-input-border-color);
-  border-radius: 0.25rem;
+  border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -2510,7 +2509,7 @@ textarea.form-control-lg {
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
-  float: left;
+  float: right;
   margin-left: -1.643em;
 }
 .form-check-input {
@@ -2567,7 +2566,7 @@ textarea.form-control-lg {
   opacity: 0.5;
 }
 .form-switch {
-  padding-left: 2.5em;
+  padding-left: 0;
 }
 .form-switch .form-check-input {
   width: 2em;
@@ -3252,8 +3251,8 @@ fieldset:disabled .btn {
 }
 .btn-danger {
   color: #fff;
-  background-color: #ff5b5b;
-  border-color: #ff5b5b;
+  background-color: #D72650;
+  border-color: #D72650;
 }
 .btn-danger:hover {
   color: #fff;
@@ -3262,10 +3261,7 @@ fieldset:disabled .btn {
 }
 .btn-check:focus + .btn-danger,
 .btn-danger:focus {
-  color: #fff;
-  background-color: #d94d4d;
-  border-color: #cc4949;
-  box-shadow: 0 0 0 0.15rem rgba(255, 116, 116, 0.5);
+ opacity: .9;
 }
 .btn-check:active + .btn-danger,
 .btn-check:checked + .btn-danger,
