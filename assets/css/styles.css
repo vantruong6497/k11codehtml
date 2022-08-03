@@ -852,6 +852,67 @@ p {
   padding: 35px 31px 31px 30px;
 }
 
+.staffs .table-responsive table {
+ 
+}
+.staffs .table-responsive table td.user {
+  min-width: 190px;
+}
+
+.staffs .table-responsive table td.branch {
+  min-width: 120px;
+}
+.staffs .table-responsive table td.access {
+  min-width: 160px;
+}
+.list-room .card-body {
+  padding: 35px 31px 31px 30px;
+}
+
+.list-room .card-body .form-select {
+  border-color: #D72650;
+  margin-left: 40px;
+  padding: 6px 100px 6px 18px;
+}
+@media screen and (max-width: 400px) {
+  .list-room .card-body .form-select {
+    margin-left: 24px;
+    padding: 6px 35px 6px 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .list-room .card-body .top {
+    flex-wrap: wrap;
+  }
+
+  
+
+  .list-room .card-body .top .list-btn {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .list-btn a {
+    margin-bottom: 10px;
+  }
+
+  .booking-details .card-body .content .left .top .list-btn a {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .booking-details .card-body .content .left .top .list-btn {
+    flex-wrap: wrap;
+  }
+}
+
+
+.list-btn a {
+  margin-left: 5px;
+}
+
+
 .btn-create {
   border: 1.5px solid #D72650;
   font-size: 12px;
@@ -860,6 +921,7 @@ p {
 border-radius: 12px;
 padding: 8px 10px;
 margin-top: -2px;
+display: inline-block;
 }
 
 .btn-create:hover {
@@ -874,6 +936,8 @@ margin-top: -2px;
   .list-cal {
     display: flex;
   }
+ 
+  
 
   .list-cal li {
     margin-left: 20px;
@@ -889,6 +953,18 @@ color: #151519;
     height: 9px;
     border-radius: 50%;
     margin-right: 6px;
+  }
+
+  @media screen and (max-width:600px) {
+    .list-cal {
+      flex-wrap: wrap;
+      float: left !important;
+    }
+
+    .list-cal li {
+      margin-left: 0;
+      margin-right: 20px;
+    }
   }
 
   .top-box {
@@ -911,6 +987,13 @@ color: #151519;
   @media screen and (max-width: 650px) {
     .top-box {
       width: calc(50% - 24px);
+    
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .top-box {
+      width: 100%;
     
     }
   }
@@ -1106,11 +1189,28 @@ font-size: 12px;
     font-weight: 600;
   }
   .order .list li.image{
+    min-width: 50px;
     width: 50px;
     height: 50px;
     border-radius: 2px;
     overflow: hidden;
     margin-right: -18px;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    .order .list li.image {
+      margin-right: 10px;
+    }
+
+    .order .list{
+      width: 100%;
+      overflow: auto;
+    }
+    .order .list li {
+      padding: 0 5px;
+      min-width: 130px;
+    }
   }
 
   .order .list li.image img {
@@ -1190,10 +1290,20 @@ font-size: 32px;
   .app-search-box {
     min-width: 250px;
     margin-right: 10px;
+    margin-bottom: 10px;
   }
+
+  @media screen and (min-width: 750px) {
+    .btn-create {
+      float: right;
+    }
+  }
+
+  
 
   .filter-top {
     margin-top: 24px;
+    flex-wrap: wrap;
   }
   .filter-top .form-control {
 
@@ -1246,6 +1356,7 @@ td ul li a {
   }
 
   .outlets .card .card-body .image{
+    min-width: 120px;
     width: 120px;
     height: 120px;
     border-radius: 12px;
@@ -1259,8 +1370,15 @@ td ul li a {
     object-fit: cover;
   }
 
+ 
   .outlets .card .card-body {
     padding: 19px 19px 20px;
+  }
+
+  @media screen and (max-width: 1250px) {
+    .outlets .card .card-body {
+      flex-wrap: wrap;
+    }
   }
 
   .outlets .card .card-body .info .map{
@@ -1270,6 +1388,11 @@ td ul li a {
     margin-right: 8px;
   }
 
+  .outlets .card .card-body .info ul {
+    flex-wrap: wrap;
+  }
+
+
   .outlets .card .card-body .info ul li {
     padding: 6px 13px;
     font-weight: 400;
@@ -1278,6 +1401,7 @@ background: rgba(195,194,209,0.2);
 border-radius: 8px;
 color: #151519;
 margin-right: 6px;
+margin-bottom: 6px;
   }
   .outlets .card .card-body .info ul li svg {
     margin-right: 5px;
@@ -1326,6 +1450,24 @@ margin-right: 6px;
     margin: 0 10px 20px;
   } 
 
+  @media screen and (max-width: 1350px) {
+    .room .card {
+      width: calc(50% - 20px);
+    } 
+  }
+
+  @media screen and (max-width: 760px) {
+    .room .card {
+      width: 100%;
+    } 
+  }
+
+  @media screen and (max-width: 420px) {
+    .room .card .card-body {
+      flex-wrap: wrap;
+    } 
+  }
+
   .orders .card .card-body .image {
     width: 100%;
     height: 100%;
@@ -1360,6 +1502,24 @@ margin-bottom: 14px;
   .fb-order .orders .card .card-body .text {
     font-weight: 400;
 font-size: 12px;
+  }
+
+  @media screen and (max-width: 1550px) {
+    .fb-order .orders .card .card-body .content .info {
+      padding-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1370px) {
+    .fb-order .orders .card {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .fb-order .orders .card {
+      width: 100%;
+    }
   }
 
   .quality {
@@ -1400,6 +1560,11 @@ font-weight: 400;
     .day-top .menu-tab {
       margin-right: 10px;
       margin-bottom: 10px;
+    }
+
+    .day-top .menu-tab li {
+      margin-left: 0;
+      margin-right: 10px;
     }
   }
   .modal-create h5 {
@@ -1502,3 +1667,380 @@ margin-right: 5px;
     margin-bottom: 10px;
 
   }
+  .room .card {
+    margin: 0 10px 24px;
+  }
+  .room .card .card-body .image {
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
+  .room .card .card-body .image img {
+    height: 100%;
+  }
+
+  .room .card .card-body {
+    padding: 20px;
+  }
+
+  .room .card .card-body .info .name{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    display: block;
+
+    white-space: nowrap;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  .room .card .card-body .info h6 {
+    font-weight: 600;
+font-size: 14px;
+    margin: 4px 0 19px;
+  }
+  .room .card .card-body .info .total {
+    display: flex;
+  }
+
+  .room .card .card-body .info .total svg {
+    margin-right: 7px;
+  }
+
+  .booking-details .card-body .image {
+    width: 100%;
+    height: 330px;
+  }
+
+  .booking-details .card-body .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .booking-details .card-body .content {
+    padding: 24px 0 0;
+  }
+  .booking-details .card-body .content .left {
+    width: 75%;
+    padding-right: 53px;
+  }
+
+  .booking-details .card-body .content .left .category {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #D72650;
+    letter-spacing: 1px;
+  }
+
+  .booking-details .list-btn a {
+    padding: 8px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-left: 12px;
+  }
+
+  .booking-details .list-btn a:first-child {
+    margin-left: 0;
+  }
+
+  .booking-details .card-body .content .left .title {
+    font-size: 32px;
+    margin-bottom: 7px;
+  }
+
+
+  .booking-details .card-body .content .left .top {
+    padding-bottom: 19px;
+    flex-wrap: wrap;
+  }
+
+  .booking-details .card-body .rating {
+      padding: 13px 0;
+      margin: 28px 0 26px;
+      border-width: 1px 0 1px 0;
+      border-style: solid;
+      border-color: #EEEEEE;
+  }
+
+  .booking-details .card-body .rating h6 {
+    font-weight: 600;
+    font-size: 18px;
+    
+  }
+
+  .booking-details .card-body .unit {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 8px 12px;
+    font-weight: 600;
+font-size: 12px;
+  }
+
+ 
+  .review .heading {
+    font-weight: 600;
+font-size: 18px;
+margin-bottom: 21px;
+  }
+
+  .review .heading span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .review .review-b {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #EAEDF3;
+  }
+
+  .review .review-b:nth-last-child(2) {
+    border: none;
+    margin-bottom: 6px;
+  }
+  .review .review-b .top {
+    padding-bottom: 14px !important;
+  }
+
+  .review .review-b p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .review .review-b .info img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 13px;
+  }
+
+  .review .review-b .info .name {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 2px 0 6px;
+  }
+
+  .review .review-b .info .day {
+    font-weight: 400;
+font-size: 12px;
+color: #C3C2D1;
+  }
+
+  .review .view {
+    font-weight: 600;
+font-size: 12px;
+padding: 8px 16px;
+    background: rgba(215, 38, 80, 0.1);
+border-radius: 12px;
+color: #D72650;
+  }
+
+  
+  .booking-details .card-body .content .right {
+    width: 25%;
+    padding-left: 48px;
+  }
+
+  .right .heading {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .right .box {
+    margin-bottom: 35px;
+  }
+  .right .box ul li {
+    margin-bottom: 12px;
+  }
+
+  .right .box ul li svg {
+    margin-right: 14px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .booking-details .card-body .content {
+      flex-wrap: wrap;
+    }
+
+    .booking-details .card-body .content .left {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .booking-details .card-body .content .right {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  .list-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+  }
+
+  .list-img .img {
+    width: calc(50% - 10px);
+    height: 100px;
+    border-radius: 4px;
+    margin: 5px;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  .list-img .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .list-img .img:last-child::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(62, 63, 66, 0.7), rgba(62, 63, 66, 0.7));
+border-radius: 4px;
+  }
+
+  .list-img .img:last-child::after {
+    font-family: 'Roboto';
+    content: '+16';
+    font-weight: 500;
+    font-size: 26px;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .booking-details.s1 .card-body .image img  {
+    object-position: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    div#calendar {
+      width: 100%;
+    }
+
+    .fc-timegrid-body {
+      width: 100% !important;
+    }
+
+    .fc-timegrid-body table {
+      width: 100% !important;
+    }
+  }
+
+  .list-items-details .header-title {
+    font-size: 18px;
+  }
+
+  .list-items-details .btn-create {
+    font-size: 10px;
+    margin-top: -10px;
+  }
+
+  .main-left.s1 {
+  display: flex;
+  }
+  .col-left {
+    width: 70%;
+    padding-right: 27px;
+  }
+
+  .col-right {
+    width: 30%;
+    padding-left: 2px;
+  }
+
+.list-items-details .card-body {
+  padding: 26px 20px 31px 20px;
+}
+
+.food-items-list {
+  margin-top: 28px;
+}
+.food-items-list .list {
+  justify-content: space-between;
+}
+.food-items-list .list .image {
+  float: left;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.food-items-list .list .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-items-list .list .info .name {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 1px 0 9px;
+}
+
+.food-items-list .list .info .categories{
+  font-weight: 600;
+  font-size: 12px;
+  margin: 4px 0 0px;
+}
+
+.food-items-list .list .info p {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.food-items-list .list .price {
+  padding: 3px 12px;
+  background: rgba(215, 38, 80, 0.1);
+  border-radius: 6px;
+  color: #D72650;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: center;
+}
+
+.food-items-list .list li.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.food-items-list .list-action  {
+  display: flex;
+  margin-top: 16px;
+}
+
+.food-items-list .list-action a {
+  font-size: 18px;
+  margin-right: 23px;
+}
+
+.food-items-list .list-action a:last-child {
+  margin-right: 0;
+}
