@@ -12,6 +12,16 @@ p {
 .mt-30 {
   margin-top: 30px;
 }
+.ml-10 {
+  margin-left: 10px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
 
 .navbar-custom .logo-light {
     display: none;
@@ -775,7 +785,7 @@ p {
     width: 158px;
     height: 36px;
   }
-  .day-top .button {
+  .day-top .button , .cld .button {
     background: var(--ct-primary);
     width: 36px;
     height: 36px;
@@ -920,7 +930,6 @@ p {
   color: #151519;
 border-radius: 12px;
 padding: 8px 10px;
-margin-top: -2px;
 display: inline-block;
 }
 
@@ -1293,11 +1302,11 @@ font-size: 32px;
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 750px) {
+  /* @media screen and (min-width: 750px) {
     .btn-create {
       float: right;
     }
-  }
+  } */
 
   
 
@@ -1604,6 +1613,7 @@ font-weight: 400;
     display: none;
     width: 100%;
     object-fit: cover;
+    object-position: center center;
   }
 
   .file-upload .image-box p {
@@ -1622,7 +1632,7 @@ font-weight: 400;
 
 
 
-  #edit-modal .file-upload .image-box img {
+  #edit-modal .file-upload .image-box img, #edit-modal-1 .file-upload .image-box img {
     display: block;
   }
 
@@ -1981,6 +1991,7 @@ border-radius: 4px;
 }
 .food-items-list .list {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .food-items-list .list .image {
   float: left;
@@ -2043,4 +2054,262 @@ border-radius: 4px;
 
 .food-items-list .list-action a:last-child {
   margin-right: 0;
+}
+
+.modal.room .modal-dialog {
+  max-width: 1006px;
+}
+
+.room .file-upload .image-box {
+  height: 170px;
+  margin-top: 0;
+}
+
+.image-box p span {
+  color: #D72650;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.upload__box {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px -8px 0;
+  max-height: 715px;
+  overflow: auto;
+}
+
+.upload__box::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 11px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.upload__inputfile {
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.upload__btn {
+
+  cursor: pointer;
+
+
+  width: 100%;
+  height: 122px;
+  background: rgba(195,194,209,0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+
+}
+
+.upload__btn p {
+  padding: 0;
+  font-weight: 600;
+  font-size: 12px;
+  color: #818089;
+}
+
+
+.upload__btn-box {
+  margin: 0 8px;
+  width: calc(50% - 16px);
+}
+
+.upload__img-wrap {
+ 
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  margin-top: 16px;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upload__img-box {
+  margin: 0 8px 16px;
+  width: calc(50% - 16px);
+  height: 122px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.upload__img-close {
+  width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        text-align: center;
+        line-height: 24px;
+        z-index: 1;
+        cursor: pointer;
+}
+
+.upload__img-close::after{
+  content: '\2716';
+    font-size: 14px;
+    color: white;
+}
+
+
+
+.img-bg {
+  background-repeat: no-repeat;
+  background-position:  center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-create textarea.form-control {
+  background: #FAFAFA;
+  height: 101px;
+
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+}
+
+.food .col-ting .file-upload .image-box {
+  height: 170px;
+}
+
+
+
+/* dsadsa */
+
+
+
+input,
+output {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+output {
+  background: #D72650;
+  padding: 5px 16px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+input[type="number"] {
+  width: 40px;
+  padding: 4px 5px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 100%;
+  height: 3px;
+  background: #E5E5E5;
+  border-radius: 5px;
+  background-image: linear-gradient(#D72650, #D72650);
+  background-size: 40% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #D72650;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: all .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #D72650;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: all .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #D72650;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: all .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ff0200;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #ff0200;
+}
+
+input[type="range"]::-ms-thumb:hover {
+  background: #ff0200;
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
 }
