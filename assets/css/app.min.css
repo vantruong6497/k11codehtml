@@ -33,10 +33,10 @@
   --ct-btn-link-hover-color: var(--ct-link-hover-color);
   --ct-btn-link-disabled-color: #adb5bd;
   --ct-form-text-color: var(--ct-text-muted);
-  --ct-input-bg: #fff;
+  --ct-input-bg: #FAFAFA;
   --ct-input-disabled-bg: #fff;
   --ct-input-color: #151519;
-  --ct-input-border-color: #ced4da;
+  --ct-input-border-color: #EAEAEA;
   --ct-input-box-shadow: var(--ct-box-shadow-inset);
   --ct-input-focus-bg: var(--ct-input-bg);
   --ct-input-focus-border-color: #b9bfc4;

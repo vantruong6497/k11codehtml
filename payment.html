@@ -233,7 +233,7 @@
           </li>
 
           <li>
-            <h4 class="page-title-main">Overview</h4>
+            <h4 class="page-title-main">Payment</h4>
           </li>
         </ul>
 
@@ -385,7 +385,7 @@
                     <div class="day-top d-flex justify-content-between align-items-center">
                       <h4>SEPTEMBER 1-7, 2022</h4>
 
-                      <div class="d-flex">
+                      <div class="d-flex wr">
                         <select class="form-select" aria-label="Default select example">
                           <option selected>All</option>
                           <option value="1">KR11@ THE HILLS</option>
@@ -547,12 +547,12 @@
 
                     
                 </div>
-                <div class="row mt-30">
+                <div class="row mt-30 pm">
 
-                  <div class="col-lg-9">
+                  <div class="col-lg-left">
                       <div class="card">
                           <div class="card-body">
-                            <h3 class="header-title mb-3">View Payment History</h3>
+                            <h3 class="header-title">View Payment History</h3>
 
                             <div class="filter-top d-flex">
                               <div class="app-search-box">
@@ -595,7 +595,7 @@
                                   <tbody>
                                       <tr>
                                           <td>01</td>
-                                          <td><img src="assets/images/users/user-1.jpg" alt=""> Anthony Jee</td>
+                                          <td class="user"><img src="assets/images/users/user-1.jpg" alt=""> Anthony Jee</td>
                                           <td class="primary">10:15 PM, March 15</td>
                                           <td>KR11@ ST13</td>
                                           <td><span class="access">Cash</span></td>
@@ -606,7 +606,7 @@
                                       </tr>
                                       <tr>
                                         <td>02</td>
-                                        <td><img src="assets/images/users/user-2.jpg" alt=""> Naomi Bishop</td>
+                                        <td ><img src="assets/images/users/user-2.jpg" alt=""> Naomi Bishop</td>
                                         <td class="primary">10:15 PM, March 15</td>
                                         <td>KR11@ ST13</td>
                                         <td><span class="access">Cash</span></td>
@@ -692,109 +692,111 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-3">
-                    <div class="card">
+                  <div class="col-lg-right">
+                    <div class="card payment-menthod">
                       <div class="card-body">
                         <h3 class="header-title mb-3">Payment Menthod</h3>
-                        <div class="card">
-                          <div class="card-body">
-                            <h4>KR11@ ST13</h4>
-                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
-
-                            <div class="group-check">
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >All</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Card</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Banking</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Cash</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="card">
-                          <div class="card-body">
-                            <h4>KR11@ ST13</h4>
-                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
-
-                            <div class="group-check">
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >All</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Card</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Banking</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Cash</label>
-                                <input type="checkbox" class="form-check-input"  >
+                        <div class="control-p">
+                          <div class="card">
+                            <div class="card-body payment-control">
+                              <h4>KR11@ ST13</h4>
+                              <p><span class="icon-map"></span>11 Street Hillton KR11</p>
+  
+                              <div class="group-check">
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >All</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Card</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Banking</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Cash</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-
-                        <div class="card">
-                          <div class="card-body">
-                            <h4>KR11@ ST13</h4>
-                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
-
-                            <div class="group-check">
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >All</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Card</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Banking</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Cash</label>
-                                <input type="checkbox" class="form-check-input"  >
+  
+                          <div class="card">
+                            <div class="card-body payment-control">
+                              <h4>KR11@ ST13</h4>
+                              <p><span class="icon-map"></span>11 Street Hillton KR11</p>
+  
+                              <div class="group-check">
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >All</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Card</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Banking</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Cash</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-
-                        <div class="card">
-                          <div class="card-body">
-                            <h4>KR11@ ST13</h4>
-                            <p><span class="icon-map"></span>11 Street Hillton KR11</p>
-
-                            <div class="group-check">
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >All</label>
-                                <input type="checkbox" class="form-check-input"  >
+  
+                          <div class="card">
+                            <div class="card-body payment-control">
+                              <h4>KR11@ ST13</h4>
+                              <p><span class="icon-map"></span>11 Street Hillton KR11</p>
+  
+                              <div class="group-check">
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >All</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Card</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Banking</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Cash</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
                               </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Card</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Banking</label>
-                                <input type="checkbox" class="form-check-input"  >
-                              </div>
-                              <div class="form-check form-switch">
-                                <label class="form-check-label" >Cash</label>
-                                <input type="checkbox" class="form-check-input"  >
+                            </div>
+                          </div>
+  
+                          <div class="card">
+                            <div class="card-body payment-control">
+                              <h4>KR11@ ST13</h4>
+                              <p><span class="icon-map"></span>11 Street Hillton KR11</p>
+  
+                              <div class="group-check">
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >All</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Card</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Banking</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
+                                <div class="form-check form-switch">
+                                  <label class="form-check-label" >Cash</label>
+                                  <input type="checkbox" class="form-check-input"  >
+                                </div>
                               </div>
                             </div>
                           </div>
