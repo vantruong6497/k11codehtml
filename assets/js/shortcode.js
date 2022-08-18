@@ -427,6 +427,103 @@
     });
   }
 
+  var colorPalette = ['000000', 'FF9966', '6699FF', '99FF66', 'CC0000', '00CC00', '0000CC', '333333', '0066FF', 'FFFFFF'];
+  var forePalette = $('.fore-palette');
+  var backPalette = $('.back-palette');
+
+  for (var i = 0; i < colorPalette.length; i++) {
+    forePalette.append('<a href="#" data-command="forecolor" data-value="' + '#' + colorPalette[i] + '" style="background-color:' + '#' + colorPalette[i] + ';" class="palette-item"></a>');
+    backPalette.append('<a href="#" data-command="backcolor" data-value="' + '#' + colorPalette[i] + '" style="background-color:' + '#' + colorPalette[i] + ';" class="palette-item"></a>');
+  }
+
+  $('.toolbar a').click(function(e) {
+    var command = $(this).data('command');
+    if (command == 'h1' || command == 'h2' || command == 'p') {
+      document.execCommand('formatBlock', false, command);
+    }
+    if (command == 'forecolor' || command == 'backcolor') {
+      document.execCommand($(this).data('command'), false, $(this).data('value'));
+    }
+    if (command == 'createlink' || command == 'insertimage') {
+      url = prompt('Enter the link here: ', 'http:\/\/');
+      document.execCommand($(this).data('command'), false, url);
+    } else document.execCommand($(this).data('command'), false, null);
+  });
+
+  $(function() {                       
+  $(".show-editor").click(function() {  
+    $('.main').addClass("active");      
+    $('.group-btn').addClass("active");      
+  });
+  $(".btn").click(function() {  
+    $('.main').removeClass("active");    
+    $('.group-btn').removeClass("active");    
+  }); 
+});
+
+
+
+$('.moreless-button-1').click(function(e) {
+  
+  $('.moretext').slideToggle();
+  if ($('.moreless-button-1').text() == "View all") {
+    $(this).text("Shorten")
+  } else {
+    $(this).text("View all")
+  }
+});
+
+$('.moreless-button-2').click(function(e) {
+  
+  $('.moretext-2').slideToggle();
+  if ($('.moreless-button-2').text() == "View all") {
+    $(this).text("Shorten")
+  } else {
+    $(this).text("View all")
+  }
+});
+
+
+
+
+$('.edit').click(function(){
+  $(this).hide();
+  $('.box').addClass('editable');
+  $('.toolbar.s1').addClass('active');
+  $('.moretext').attr('contenteditable', 'true');
+  $('.text').attr('contenteditable', 'true');
+  $('.editor').attr('contenteditable', 'true');    
+  $('.save').show();
+});
+
+$('.save').click(function(){
+  $(this).hide();
+  $('.box').removeClass('editable');
+  $('.toolbar.s1').removeClass('active');
+  $('.text-edit').removeAttr('contenteditable');
+  $('.text').removeAttr('contenteditable');
+  $('.moretext').removeAttr('contenteditable');
+  $('.editor').removeAttr('contenteditable');
+  $('.edit').show();
+});
+
+
+
+$('#edit').click(function(){
+  $(this).hide();
+  $('.upload__box').addClass('active');
+   
+  $('#save').show();
+});
+
+$('#save').click(function(){
+  $(this).hide();
+  $('.upload__box').removeClass('active');
+  
+  $('#edit').show();
+});
+
+
 
 
   // Dom Ready

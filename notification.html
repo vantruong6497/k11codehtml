@@ -284,22 +284,7 @@
                       <a href="outlets.html">Outlets view</a>
                     </li>
                     <li>
-                      <a href="list-room.html">Lists Rooms</a>
-                    </li>
-                    <li>
-                      <a href="booking-details.html">Booking Details</a>
-                    </li>
-                    <li>
-                      <a href="fb-orders.html">F&B Orders</a>
-                    </li>
-                    <li>
-                      <a href="categories.html">Categories</a>
-                    </li>
-                    <li>
-                      <a href="list-food.html">Lists Food</a>
-                    </li>
-                    <li>
-                      <a href="list-items-details.html">Lists Items Details</a>
+                      <a href="fb-orders.html">Categories</a>
                     </li>
                   </ul>
                 </div>
@@ -388,9 +373,41 @@
                           <h4 class="header-title">Create Notification</h4>
                         </div>
 
-                        <form action="">
-                          <input type="text" placeholder="Enter notification...">
-                      </form>
+                        <div class="main">
+                          <div id='editor' contenteditable>
+                            <h5>Notice that the branch will close early at 11:00 pm</h5>
+                      
+                          </div>
+                          
+                        <div class="toolbar">
+                          <a href="javascript:void(0)" data-command='bold'><i class='fa fa-bold'></i></a>
+                          <a href="javascript:void(0)" data-command='italic'><i class='fa fa-italic'></i></a>
+                          <a href="javascript:void(0)" data-command='underline'><i class='fa fa-underline'></i></a>
+                          <a href="javascript:void(0)" data-command='strikeThrough'><i class='fa fa-strikethrough'></i></a>
+                          <a href="javascript:void(0)" data-command='justifyLeft'><i class='fa fa-align-left'></i></a>
+                          <a href="javascript:void(0)" data-command='justifyCenter'><i class='fa fa-align-center'></i></a>
+                          <a href="javascript:void(0)" data-command='justifyRight'><i class='fa fa-align-right'></i></a>
+                          <a href="javascript:void(0)" data-command='justifyFull'><i class='fa fa-align-justify'></i></a>
+                          <a href="javascript:void(0)" data-command='indent'><i class='fa fa-indent'></i></a>
+                          <a href="javascript:void(0)" data-command='outdent'><i class='fa fa-outdent'></i></a>
+                          <a href="javascript:void(0)" data-command='insertUnorderedList'><i class='fa fa-list-ul'></i></a>
+                          <a href="javascript:void(0)" data-command='insertOrderedList'><i class='fa fa-list-ol'></i></a>
+                          <a href="javascript:void(0)" data-command='createlink'><i class='fa fa-link'></i></a>
+                          <a href="javascript:void(0)" data-command='unlink'><i class='fa fa-unlink'></i></a>
+                          <a href="javascript:void(0)" data-command='insertimage'><i class='fa fa-image'></i></a>
+                          <a href="javascript:void(0)" data-command='p'>P</a>
+                        </div>
+                        </div>
+  
+                        <div class="bottom row">
+  
+                          
+                       
+                          <a href="#" class="show-editor">Enter notification...</a>
+                          <div class="group-btn">
+                            <button type="submit" class="btn btn-danger waves-effect waves-light">Post</button>
+                            <button type="button" class="btn btn-create  waves-effect waves-light" data-bs-dismiss="modal">Cancel</button>
+                          </div>
   
                       </div>
                     </div>
@@ -421,7 +438,40 @@
                         </div>
 
                         <div class="body-content">
-                          <a href="#" class="title">Notice that the branch will close early at 11:00 pm</a>
+                          <a href="#" class="title editor">Notice that the branch will close early at 11:00 pm</a>
+
+                          <div class="toolbar s1">
+                            <!-- <a href="#" data-command='undo'><i class='fa fa-undo'></i></a>
+                            <a href="#" data-command='redo'><i class='fa fa-repeat'></i></a> -->
+                            <!-- <div class="fore-wrapper"><i class='fa fa-font' style='color:#C96;'></i>
+                              <div class="fore-palette">
+                              </div>
+                            </div>
+                            <div class="back-wrapper"><i class='fa fa-font' style='background:#C96;'></i>
+                              <div class="back-palette">
+                              </div>
+                            </div> -->
+                            <a href="javascript:void(0)" data-command='bold'><i class='fa fa-bold'></i></a>
+                            <a href="javascript:void(0)" data-command='italic'><i class='fa fa-italic'></i></a>
+                            <a href="javascript:void(0)" data-command='underline'><i class='fa fa-underline'></i></a>
+                            <a href="javascript:void(0)" data-command='strikeThrough'><i class='fa fa-strikethrough'></i></a>
+                            <a href="javascript:void(0)" data-command='justifyLeft'><i class='fa fa-align-left'></i></a>
+                            <a href="javascript:void(0)" data-command='justifyCenter'><i class='fa fa-align-center'></i></a>
+                            <a href="javascript:void(0)" data-command='justifyRight'><i class='fa fa-align-right'></i></a>
+                            <a href="javascript:void(0)" data-command='justifyFull'><i class='fa fa-align-justify'></i></a>
+                            <a href="javascript:void(0)" data-command='indent'><i class='fa fa-indent'></i></a>
+                            <a href="javascript:void(0)" data-command='outdent'><i class='fa fa-outdent'></i></a>
+                            <a href="javascript:void(0)" data-command='insertUnorderedList'><i class='fa fa-list-ul'></i></a>
+                            <a href="javascript:void(0)" data-command='insertOrderedList'><i class='fa fa-list-ol'></i></a>
+                            <!-- <a href="#" data-command='h1'>H1</a>
+                            <a href="#" data-command='h2'>H2</a> -->
+                            <a href="javascript:void(0)" data-command='createlink'><i class='fa fa-link'></i></a>
+                            <a href="javascript:void(0)" data-command='unlink'><i class='fa fa-unlink'></i></a>
+                            <a href="javascript:void(0)" data-command='insertimage'><i class='fa fa-image'></i></a>
+                            <a href="javascript:void(0)" data-command='p'>P</a>
+                            <!-- <a href="#" data-command='subscript'><i class='fa fa-subscript'></i></a>
+                            <a href="#" data-command='superscript'><i class='fa fa-superscript'></i></a> -->
+                          </div>
 
                           <div class="meta">
                             <p>
@@ -433,13 +483,20 @@
                           <p class="text">
                             Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is
                           </p>
+
+                          <div class="moretext">
+                            <p>According to Wikipedia, Chinese is the most spoken language in the world, followed by Spanish, then English, Hindi, Arabic, etc. While English is popular, there are loads of other popular languages being spoken and written on a daily basis.</p>
+                            <p>So why the heck don’t website builders offer an easy and functional way of allowing you to create multi-language websites?</p>
+                            <p>Okay, I get it. Website builders won’t do the tough translation work for you, which is fair enough. But wouldn’t it be awesome</p>
+                          </div>
                          
                           <ul class="list-action">
                             <li>
-                              <a href="">View all</a>
+                              <a href="javascript:void(0)" class="moreless-button">View all</a>
                             </li>
                             <li>
-                              <a href="">Edit</a>
+                              <a href="javascript:void(0)" class="edit">Edit</a>
+                            <a href="javascript:void(0)" class="save">Save</a>
                             </li>
                             <li>
                               <a href=""  data-bs-toggle="modal" data-bs-target="#delete-modal">Delete</a>
@@ -569,184 +626,186 @@
 
                 </div>
 
-                <div class="col-right s1">
-                  <div class="card ">
-                    <div class="card-body">
-
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="mb-3">
-                            <label for="name" class="form-label">Branch</label>
-                            <select class="form-select" required="">
-                              <option selected="">All Branch</option>
-                              <option>Branch 2</option>
-                              <option>Branch 3</option>
-  
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label for="name" class="form-label">Member Tier</label>
-                            <select class="form-select" required="">
-                              <option selected="">All Members</option>
-                              <option>Cashier</option>
-                    
-  
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label for="name" class="form-label">Specific Users</label>
-                            <select class="form-select" required="">
-                              <option selected="">Anthony Jee   #12345</option>
-                              <option>Anthony Jee   #12345</option>
-                    
-  
-                            </select>
-                          </div>
-  
-                          
-                        </div>
-                      </div>
-                     
-      
-  
-                    </div>
-                  </div>
-                </div>
+                
                 
               </div>
-              <div class="main-right">
-                <div class="card">
+              <div class="col-right s1">
+                <div class="card ">
                   <div class="card-body">
 
-                      <h3 class="header-title mb-3">Messages Center</h3>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Branch</label>
+                          <select class="form-select" required="">
+                            <option selected="">All Branch</option>
+                            <option>Branch 2</option>
+                            <option>Branch 3</option>
 
-                      <div class="inbox-widget">
-                          
-                          <div class="inbox-item">
-                              <a href="#">
-                                  <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-1.jpg" class="rounded-circle" alt=""></div>
-                                  <h5 class="inbox-item-author">Anthony Jee</h5>
-                                  <p class="inbox-item-text">Hey! there I'm available</p>
-                                  <p class="inbox-item-date">05 min</p>
-                              </a>
-                          </div>
-                          <div class="inbox-item">
-                            <a href="#">
-                                <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
-                                <h5 class="inbox-item-author">Steven Franklin</h5>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Member Tier</label>
+                          <select class="form-select" required="">
+                            <option selected="">All Members</option>
+                            <option>Cashier</option>
+                  
+
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Specific Users</label>
+                          <select class="form-select" required="">
+                            <option selected="">Anthony Jee   #12345</option>
+                            <option>Anthony Jee   #12345</option>
+                  
+
+                          </select>
+                        </div>
+
+                        
+                      </div>
+                    </div>
+                   
+    
+
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="main-right">
+              <div class="card">
+                <div class="card-body">
+
+                    <h3 class="header-title mb-3">Messages Center</h3>
+
+                    <div class="inbox-widget">
+                        
+                        <div class="inbox-item">
+                            <a href="messages.html">
+                                <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-1.jpg" class="rounded-circle" alt=""></div>
+                                <h5 class="inbox-item-author">Anthony Jee</h5>
                                 <p class="inbox-item-text">Hey! there I'm available</p>
                                 <p class="inbox-item-date">05 min</p>
                             </a>
                         </div>
                         <div class="inbox-item">
-                          <a href="#">
-                              <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
+                          <a href="messages.html">
+                              <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
                               <h5 class="inbox-item-author">Steven Franklin</h5>
                               <p class="inbox-item-text">Hey! there I'm available</p>
                               <p class="inbox-item-date">05 min</p>
                           </a>
                       </div>
                       <div class="inbox-item">
-                        <a href="#">
-                            <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
-                            <h5 class="inbox-item-author">Anthony Jee</h5>
+                        <a href="messages.html">
+                            <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
+                            <h5 class="inbox-item-author">Steven Franklin</h5>
                             <p class="inbox-item-text">Hey! there I'm available</p>
                             <p class="inbox-item-date">05 min</p>
                         </a>
                     </div>
                     <div class="inbox-item">
-                      <a href="#">
-                          <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
-                          <h5 class="inbox-item-author">Steven Franklin</h5>
+                      <a href="messages.html">
+                          <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
+                          <h5 class="inbox-item-author">Anthony Jee</h5>
                           <p class="inbox-item-text">Hey! there I'm available</p>
                           <p class="inbox-item-date">05 min</p>
                       </a>
                   </div>
                   <div class="inbox-item">
-                    <a href="#">
-                        <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
-                        <h5 class="inbox-item-author">Anthony Jee</h5>
+                    <a href="messages.html">
+                        <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
+                        <h5 class="inbox-item-author">Steven Franklin</h5>
                         <p class="inbox-item-text">Hey! there I'm available</p>
                         <p class="inbox-item-date">05 min</p>
                     </a>
                 </div>
                 <div class="inbox-item">
-                  <a href="#">
-                      <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-7.jpg" class="rounded-circle" alt=""></div>
-                      <h5 class="inbox-item-author">Steven Franklin</h5>
+                  <a href="messages.html">
+                      <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
+                      <h5 class="inbox-item-author">Anthony Jee</h5>
                       <p class="inbox-item-text">Hey! there I'm available</p>
                       <p class="inbox-item-date">05 min</p>
                   </a>
               </div>
               <div class="inbox-item">
-                <a href="#">
-                    <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-8.jpg" class="rounded-circle" alt=""></div>
-                    <h5 class="inbox-item-author">Anthony Jee</h5>
+                <a href="messages.html">
+                    <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-7.jpg" class="rounded-circle" alt=""></div>
+                    <h5 class="inbox-item-author">Steven Franklin</h5>
                     <p class="inbox-item-text">Hey! there I'm available</p>
                     <p class="inbox-item-date">05 min</p>
                 </a>
             </div>
             <div class="inbox-item">
-              <a href="#">
-                  <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-9.jpg" class="rounded-circle" alt=""></div>
-                  <h5 class="inbox-item-author">Steven Franklin</h5>
+              <a href="messages.html">
+                  <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-8.jpg" class="rounded-circle" alt=""></div>
+                  <h5 class="inbox-item-author">Anthony Jee</h5>
                   <p class="inbox-item-text">Hey! there I'm available</p>
                   <p class="inbox-item-date">05 min</p>
               </a>
           </div>
           <div class="inbox-item">
-            <a href="#">
-                <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-10.jpg" class="rounded-circle" alt=""></div>
-                <h5 class="inbox-item-author">Anthony Jee</h5>
+            <a href="messages.html">
+                <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-9.jpg" class="rounded-circle" alt=""></div>
+                <h5 class="inbox-item-author">Steven Franklin</h5>
                 <p class="inbox-item-text">Hey! there I'm available</p>
                 <p class="inbox-item-date">05 min</p>
             </a>
         </div>
         <div class="inbox-item">
-          <a href="#">
-              <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-11.jpg" class="rounded-circle" alt=""></div>
-              <h5 class="inbox-item-author">Steven Franklin</h5>
+          <a href="messages.html">
+              <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-10.jpg" class="rounded-circle" alt=""></div>
+              <h5 class="inbox-item-author">Anthony Jee</h5>
               <p class="inbox-item-text">Hey! there I'm available</p>
               <p class="inbox-item-date">05 min</p>
           </a>
       </div>
       <div class="inbox-item">
-        <a href="#">
-            <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-12.jpg" class="rounded-circle" alt=""></div>
-            <h5 class="inbox-item-author">Anthony Jee</h5>
+        <a href="messages.html">
+            <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-11.jpg" class="rounded-circle" alt=""></div>
+            <h5 class="inbox-item-author">Steven Franklin</h5>
             <p class="inbox-item-text">Hey! there I'm available</p>
             <p class="inbox-item-date">05 min</p>
         </a>
     </div>
     <div class="inbox-item">
-      <a href="#">
-          <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-13.jpg" class="rounded-circle" alt=""></div>
+      <a href="messages.html">
+          <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-12.jpg" class="rounded-circle" alt=""></div>
           <h5 class="inbox-item-author">Anthony Jee</h5>
           <p class="inbox-item-text">Hey! there I'm available</p>
           <p class="inbox-item-date">05 min</p>
       </a>
   </div>
   <div class="inbox-item">
-    <a href="#">
-        <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-14.jpg" class="rounded-circle" alt=""></div>
+    <a href="messages.html">
+        <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-13.jpg" class="rounded-circle" alt=""></div>
         <h5 class="inbox-item-author">Anthony Jee</h5>
         <p class="inbox-item-text">Hey! there I'm available</p>
         <p class="inbox-item-date">05 min</p>
     </a>
 </div>
 <div class="inbox-item">
-  <a href="#">
-      <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-15.jpg" class="rounded-circle" alt=""></div>
+  <a href="messages.html">
+      <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-14.jpg" class="rounded-circle" alt=""></div>
       <h5 class="inbox-item-author">Anthony Jee</h5>
       <p class="inbox-item-text">Hey! there I'm available</p>
       <p class="inbox-item-date">05 min</p>
   </a>
 </div>
+<div class="inbox-item">
+<a href="messages.html">
+    <div class="inbox-item-img"><div class="status"></div><img src="assets/images/users/user-15.jpg" class="rounded-circle" alt=""></div>
+    <h5 class="inbox-item-author">Anthony Jee</h5>
+    <p class="inbox-item-text">Hey! there I'm available</p>
+    <p class="inbox-item-date">05 min</p>
+</a>
+</div>
 
-                      </div>
-                  </div>
-              </div>
-              </div>
+                    </div>
+                </div>
+            </div>
             </div>
               
           </div>

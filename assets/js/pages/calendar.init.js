@@ -23,6 +23,7 @@
       this.$modal.show(),
       (this.$selectedEvent = e.event),
       l("#event-title").val(this.$selectedEvent.title),
+      l("#event-description").val(this.$selectedEvent.description),
       l("#event-category").val(this.$selectedEvent.classNames[0]);
   }),
     (e.prototype.onSelect = function (e) {
@@ -44,288 +45,139 @@
       new FullCalendar.Draggable(document.getElementById("external-events"), {
         itemSelector: ".external-event",
         eventData: function (e) {
-          return { title: e.innerText, className: l(e).data("class") };
+          return { title: e.innerText, description: e.innerText, className: l(e).data("class") };
         },
       });
       var e = [
 
           {
-            title: "Anthony Jee",
-            start: '2022-08-01T09:30:00' ,
-            end: '2022-08-01T10:30:00',
+            title: "Anthony Jee 3",
+            description: "Anthony Jee 2",
+            start: '2022-08-14T09:30:00' ,
+            end: '2022-08-14T10:30:00',
             className: "bg-cancel",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-01T11:15:00' ,
-            end: '2022-08-01T12:15:00',
+            start: '2022-08-14T11:15:00' ,
+            end: '2022-08-14T12:15:00',
             className: "bg-complete",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-01T13:00:00' ,
-            end: '2022-08-01T14:15:00',
+            start: '2022-08-14T13:00:00' ,
+            end: '2022-08-14T14:15:00',
             className: "bg-complete",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-01T14:30:00' ,
-            end: '2022-08-01T15:40:00',
+            start: '2022-08-14T14:30:00' ,
+            end: '2022-08-14T15:40:00',
             className: "bg-cancel",
           },
 
           {
             title: "Anthony Jee",
-            start: '2022-08-02T10:00:00' ,
-            end: '2022-08-02T11:15:00',
+            start: '2022-08-15T10:00:00' ,
+            end: '2022-08-15T11:15:00',
             className: "bg-complete",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-02T11:40:00' ,
-            end: '2022-08-02T12:50:00',
+            start: '2022-08-15T11:40:00' ,
+            end: '2022-08-15T12:50:00',
             className: "bg-cancel",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-02T13:20:00' ,
-            end: '2022-08-02T14:30:00',
+            start: '2022-08-15T13:20:00' ,
+            end: '2022-08-15T14:30:00',
             className: "bg-cancel",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-02T14:45:00' ,
-            end: '2022-08-02T15:45:00',
+            start: '2022-08-15T14:45:00' ,
+            end: '2022-08-15T15:45:00',
             className: "bg-complete",
           },
 
           {
             title: "Anthony Jee",
-            start: '2022-08-03T09:30:00' ,
-            end: '2022-08-03T10:40:00',
+            start: '2022-08-16T09:30:00' ,
+            end: '2022-08-16T10:40:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-03T11:20:00' ,
-            end: '2022-08-03T12:30:00',
+            start: '2022-08-16T11:20:00' ,
+            end: '2022-08-16T12:30:00',
             className: "bg-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-03T13:00:00' ,
-            end: '2022-08-03T14:10:00',
+            start: '2022-08-16T13:00:00' ,
+            end: '2022-08-16T14:10:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-03T14:40:00' ,
-            end: '2022-08-03T15:45:00',
+            start: '2022-08-16T14:40:00' ,
+            end: '2022-08-16T15:45:00',
             className: "bg-active",
           },
 
           {
             title: "Anthony Jee",
-            start: '2022-08-04T09:30:00' ,
-            end: '2022-08-04T10:40:00',
+            start: '2022-08-17T09:30:00' ,
+            end: '2022-08-17T10:40:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-04T11:20:00' ,
-            end: '2022-08-04T12:30:00',
+            start: '2022-08-17T11:20:00' ,
+            end: '2022-08-17T12:30:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-04T14:40:00' ,
-            end: '2022-08-04T15:45:00',
-            className: "bg-need-assigned",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-08-05T11:20:00' ,
-            end: '2022-08-05T12:30:00',
+            start: '2022-08-17T14:40:00' ,
+            end: '2022-08-17T15:45:00',
             className: "bg-need-assigned",
           },
 
           {
             title: "Anthony Jee",
-            start: '2022-08-06T09:30:00' ,
-            end: '2022-08-06T10:40:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-08-06T11:20:00' ,
-            end: '2022-08-06T12:30:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-08-06T13:00:00' ,
-            end: '2022-08-06T14:10:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-08-06T14:40:00' ,
-            end: '2022-08-06T15:45:00',
+            start: '2022-08-11T11:20:00' ,
+            end: '2022-08-11T12:30:00',
             className: "bg-need-assigned",
           },
 
           {
             title: "Anthony Jee",
-            start: '2022-08-07T13:00:00' ,
-            end: '2022-08-07T14:10:00',
+            start: '2022-08-19T09:30:00' ,
+            end: '2022-08-19T10:40:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-08-07T14:40:00' ,
-            end: '2022-08-07T15:45:00',
-            className: "bg-need-assigned",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-18T09:30:00' ,
-            end: '2022-07-18T10:30:00',
-            className: "bg-cancel",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-18T11:15:00' ,
-            end: '2022-07-18T12:15:00',
-            className: "bg-complete",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-18T13:00:00' ,
-            end: '2022-07-18T14:15:00',
-            className: "bg-complete",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-18T14:30:00' ,
-            end: '2022-07-18T15:40:00',
-            className: "bg-cancel",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-019T10:00:00' ,
-            end: '2022-07-019T11:15:00',
-            className: "bg-complete",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-019T11:40:00' ,
-            end: '2022-07-019T12:50:00',
-            className: "bg-cancel",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-019T13:20:00' ,
-            end: '2022-07-019T14:30:00',
-            className: "bg-cancel",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-019T14:45:00' ,
-            end: '2022-07-019T15:45:00',
-            className: "bg-complete",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-20T09:30:00' ,
-            end: '2022-07-20T10:40:00',
+            start: '2022-08-19T11:20:00' ,
+            end: '2022-08-19T12:30:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-07-20T11:20:00' ,
-            end: '2022-07-20T12:30:00',
-            className: "bg-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-20T13:00:00' ,
-            end: '2022-07-20T14:10:00',
+            start: '2022-08-19T13:00:00' ,
+            end: '2022-08-19T14:10:00',
             className: "bg-need-assigned",
           },
           {
             title: "Anthony Jee",
-            start: '2022-07-20T14:40:00' ,
-            end: '2022-07-20T15:45:00',
-            className: "bg-active",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-21T09:30:00' ,
-            end: '2022-07-21T10:40:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-21T11:20:00' ,
-            end: '2022-07-21T12:30:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-21T14:40:00' ,
-            end: '2022-07-21T15:45:00',
+            start: '2022-08-19T14:40:00' ,
+            end: '2022-08-19T15:45:00',
             className: "bg-need-assigned",
           },
 
-          {
-            title: "Anthony Jee",
-            start: '2022-07-22T11:20:00' ,
-            end: '2022-07-22T12:30:00',
-            className: "bg-need-assigned",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-23T09:30:00' ,
-            end: '2022-07-23T10:40:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-23T11:20:00' ,
-            end: '2022-07-23T12:30:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-23T13:00:00' ,
-            end: '2022-07-23T14:10:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-23T14:40:00' ,
-            end: '2022-07-23T15:45:00',
-            className: "bg-need-assigned",
-          },
-
-          {
-            title: "Anthony Jee",
-            start: '2022-07-24T13:00:00' ,
-            end: '2022-07-24T14:10:00',
-            className: "bg-need-assigned",
-          },
-          {
-            title: "Anthony Jee",
-            start: '2022-07-24T14:40:00' ,
-            end: '2022-07-24T15:45:00',
-            className: "bg-need-assigned",
-          },
+          
           
         ],
         a = this;
@@ -348,7 +200,7 @@
         },
         initialView: "dayGridMonth",
         handleWindowResize: !0,
-        height: l(window).height() - 150,
+        height: l(window).height() - 450,
         headerToolbar: {
           left: "prev,next today",
           center: "title",

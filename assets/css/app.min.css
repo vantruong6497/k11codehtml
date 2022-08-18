@@ -12660,7 +12660,7 @@ body[data-layout-color="dark"] .social-list-item {
   color: #B7B7B7;
   font-size: 12px;
   position: absolute;
-  right:0;
+  right:34px;
   top: 10px;
 }
 .conversation-list {
@@ -12677,19 +12677,7 @@ body[data-layout-color="dark"] .social-list-item {
 .conversation-list li:hover .conversation-actions {
   display: block;
 }
-.conversation-list .chat-avatar {
-  float: left;
-  text-align: center;
-  width: 42px;
-}
-.conversation-list .chat-avatar img {
-  border-radius: 100%;
-  width: 100%;
-}
-.conversation-list .chat-avatar i {
-  font-size: 12px;
-  font-style: normal;
-}
+
 .conversation-list .ctext-wrap {
   background: var(--ct-chat-secondary-user-bg);
   border-radius: 3px;
@@ -12722,21 +12710,11 @@ body[data-layout-color="dark"] .social-list-item {
   margin-right: -1px;
   border-right-color: var(--ct-chat-secondary-user-bg);
 }
-.conversation-list .conversation-text {
-  float: left;
-  font-size: 12px;
-  margin-left: 12px;
-  width: 70%;
-}
+
 .conversation-list .odd .chat-avatar {
   float: right !important;
 }
-.conversation-list .odd .conversation-text {
-  float: right !important;
-  margin-right: 12px;
-  text-align: right;
-  width: 70% !important;
-}
+
 .conversation-list .odd .ctext-wrap {
   background-color: var(--ct-chat-primary-user-bg);
 }
@@ -15615,29 +15593,23 @@ body[data-layout-color="dark"] .auth-logo .logo-dark {
   margin-bottom: 0;
 }
 .conversation-list li {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 .conversation-list li .chat-day-title {
   position: relative;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 .conversation-list li .chat-day-title .title {
   background-color: var(--ct-card-bg);
   position: relative;
   z-index: 1;
   padding: 6px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #818089;
 }
-.conversation-list li .chat-day-title:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  right: 0;
-  background-color: #f8f9fa;
-  top: 10px;
-}
+
 .conversation-list li .message-list::after {
   display: block;
   clear: both;
@@ -15680,12 +15652,7 @@ body[data-layout-color="dark"] .auth-logo .logo-dark {
   margin: 0;
   padding-top: 4px;
 }
-.conversation-list .conversation-text {
-  float: left;
-  font-size: 12px;
-  margin-left: 12px;
-  width: 70%;
-}
+
 .conversation-list .conversation-text .time {
   display: block;
   font-size: 12px;
@@ -15694,12 +15661,7 @@ body[data-layout-color="dark"] .auth-logo .logo-dark {
 .conversation-list .odd .chat-avatar {
   float: right;
 }
-.conversation-list .odd .conversation-text {
-  float: right;
-  margin-left: 0;
-  margin-right: 12px;
-  text-align: right;
-}
+
 .conversation-list .odd .ctext-wrap {
   background-color: #f8f9fa;
   color: #6c757d;
