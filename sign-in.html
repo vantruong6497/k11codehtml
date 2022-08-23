@@ -26,64 +26,48 @@
     <div id="wrapper">
 
 
-        <div class="account-pages">
-            <div class="container-fluid">
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="">
-                            <div class="card-body">
-                                
-                                <div class="mb-4">
-                                    <h4 class="mt-0">Hi, Welcome Back</h4>
-                                    <p>Let’s start the day with a great smile. :)</p>
-                                </div>
-
-                                <form action="#">
-                                    <div class="mb-3">
-                                        <label for="emailaddress" class="form-label">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
-                                    </div>
-
-                                    <div class="mb-3 text-right">
-                                        <p> <a href="#" class="text-muted ms-1 ">Forgot password?</a></p>
-                                    </div>
-
-                                    <div class="mb-3 d-grid text-center">
-                                        <button class="btn btn-primary" type="submit"> Sign In </button>
-                                        <button class="btn btn-primary mt-2" type="submit"> Sign In With Google </button>
-                                    </div>
-                                </form>
-
-                            </div> <!-- end card-body -->
-                        </div>
-                        <!-- end card -->
-
-
-
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="images">
-                            <img src="assets/images/layouts/login.jpg" alt="">
-                        </div>
-                    </div>
-
-                    
+        <div class="account-pages d-flex">
+            <div class="content-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
                 </div>
-                <!-- end row -->
+                <div class="card-body">
+                        
+                    <div class="mb-4">
+                        <h4 class="mt-0">Hi, Welcome Back</h4>
+                        <p>Let’s start the day with a great smile. :)</p>
+                    </div>
+
+                    <form action="sign-up.html">
+                        <div class="mb-3">
+                            <label for="emailaddress" class="form-label">Email</label>
+                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Examole@gmail.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input class="form-control" type="password" required="" id="password" placeholder="****">
+                        </div>
+
+                        <div class="mb-3 text-right">
+                            <p> <a href="forgot-password.html" class="text-muted ms-1 ">Forgot password?</a></p>
+                        </div>
+
+                        <div class="mb-3 d-grid text-center">
+                            <button class="btn btn-primary active" type="submit"> Sign In </button>
+                            <button class="btn btn-primary mt-24" type="submit"> Sign In With Google </button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
-            <!-- end container -->
+            <div class="content-right">
+                <div class="images">
+                    <img src="assets/images/layouts/login.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <!-- END wrapper -->

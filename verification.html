@@ -25,6 +25,7 @@
     <!-- Begin page -->
     <div id="wrapper">
 
+
         <div class="account-pages d-flex">
             <div class="content-left">
                 <div class="logo">
@@ -35,29 +36,31 @@
                 <div class="card-body">
                         
                     <div class="mb-4">
-                        <h4 class="mt-0">Welcome Back Anthony</h4>
-                        <p>Start your 8 days free triel. No any card required.</p>
+                        <h4 class="mt-0">Email Verification</h4>
+                        <p>OTP (One time password) has been sent to your Email address: <br>
+                            <span>olooksupport@demo.com</span>
+                        </p>
                     </div>
 
                     <form action="sign-up.html">
                         <div class="mb-3">
-                            <label for="emailaddress" class="form-label">Email</label>
-                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Examole@gmail.com">
+                            <label for="emailaddress" class="form-label">OTP Code</label>
+                            <div class="otp-code">
+                                <input class="form-control" type="number"  required="" placeholder="">
+                                <input class="form-control" type="number"  required="" placeholder="">
+                                <input class="form-control" type="number"  required="" placeholder="">
+                                <input class="form-control" type="number"  required="" placeholder="">
+                                <input class="form-control" type="number"  required="" placeholder="">
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input class="form-control" type="password" required="" id="password" placeholder="****">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Re - Password</label>
-                            <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
-                        </div>
-
+                    
                         <div class="mb-3 d-grid text-center">
-                            <button class="btn btn-primary active" type="submit"> Sign In </button>
-                            <button class="btn btn-primary mt-24" type="submit"> Sign In With Google </button>
+                            <button class="btn btn-primary active" type="submit"> Verify & Create New Password </button>
+                        </div>
+
+                        <div class="mb-3">
+                            <p>Login via <a href="#">e-mail?</a></p>
                         </div>
                     </form>
 
@@ -69,8 +72,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- END wrapper -->
 

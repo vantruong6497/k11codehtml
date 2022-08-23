@@ -9,6 +9,10 @@ li {
   font-weight: 500;
   color: #000;
 }
+.table-responsive table td.date {
+  font-weight: 400;
+  min-width: 110px;
+}
 p {
   margin: 0;
   padding: 0;
@@ -891,7 +895,8 @@ p {
   min-width: 120px;
 }
 .staffs .table-responsive table td.access {
-  min-width: 160px;
+  min-width: 165px;
+  border-radius: 0;
 }
 .list-room .card-body {
   padding: 35px 31px 31px 30px;
@@ -902,6 +907,7 @@ p {
   margin-left: 40px;
   padding: 6px 100px 6px 18px;
   background-color: #fff;
+  width: 200px;
 }
 @media screen and (max-width: 400px) {
   .list-room .card-body .form-select {
@@ -1078,7 +1084,7 @@ color: #151519;
     padding: 4px 13px;
     background: rgba(215,38,80,0.08);
     border-radius: 12px;
-    font-weight: 600;
+    font-weight: 400;
   font-size: 12px;
   color: #D72650;
   }
@@ -1279,10 +1285,6 @@ color: #151519;
     object-fit: cover;
   }
 
-  .account-pages .card-body {
-    padding: 80px 200px;
-  }
-
   .text-right {
     text-align: right;
   }
@@ -1358,6 +1360,9 @@ font-size: 32px;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
   }
+  .filter-top .form-select:focus-visible {
+    border-color: #D72650;
+  }
   .filter-top .btn {
     border: 1px solid #E5E5E5;
     border-left: 0;
@@ -1395,6 +1400,11 @@ td ul li a {
   td ul li a span {
     display: block;
     font-size: 20px;
+  }
+  td ul li a svg {
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
   }
 
   .outlets .card .card-body .image{
@@ -1768,10 +1778,23 @@ font-size: 14px;
   .room .card .card-body .info .total svg {
     margin-right: 7px;
   }
-
   .booking-details .card-body .image {
     width: 100%;
     height: 330px;
+  }
+
+  .booking-details .card-body .image .swiper {
+    width: 100%;
+    height: 330px;
+  }
+  .booking-details .swiper-pagination-bullet {
+    width: 60.2px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+  }
+  .booking-details .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #FFFFFF;
   }
 
   .booking-details .card-body .image img {
@@ -3473,5 +3496,440 @@ border-radius: 12px;
 
 .banner .upload__box.active  .upload__btn {
   display: flex;
+}
+
+.assign-room .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.assign-room .bottom {
+  display: flex;
+}
+.assign-room .top h6 {
+  font-weight: 600;
+  font-size: 12px;
+  color: #D72650;
+  letter-spacing: 1px;
+  margin: 4px 0 10px;
+}
+.assign-room .top  .header-title {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .assign-room .top  .header-title {
+    font-size: 20px;
+  }
+}
+.assign-room .bottom {
+  margin-bottom: 4px;
+}
+.assign-room .bottom p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #818089;
+  margin-right: 20px;
+}
+
+.assign-room .bottom p:last-child {
+  margin-right: 0;
+}
+.assign-room .bottom p span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #151519;
+}
+
+.assign-room .btn-create {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 14px;
+  margin-top: 13px;
+  border-width: 2px;
+}
+.list-room-calendar {
+  border: 1px solid rgba(228, 230, 232, 0.6);
+  border-radius: 8px;
+  margin-top: 26px;
+}
+.assign-room .list-room-calendar .top {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 19px;
+  background: #FBFBFF;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid rgba(228, 230, 232, 0.6);
+}
+.assign-room .list-room-calendar .top h5 {
+  font-weight: 600;
+font-size: 18px;
+margin-right: 40px;
+margin-bottom: 6px;
+}
+.list-room-calendar .top .form-select {
+    border-color: #D72650;
+    margin-left: 10px;
+    padding: 5px 20px 5px 18px;
+    width: 200px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    color: #151519;
+}
+
+@media screen and (max-width: 760px) {
+  .assign-room .list-room-calendar .top h5 {
+    width: 100%;
+  }
+  .list-room-calendar .top .form-select {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list-room-calendar .top .form-select {
+    margin-bottom: 10px;
+  }
+}
+
+.list-room-calendar .body-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-room-calendar .body-content .box {
+  width: calc(100% / 7);
+  height: 120px;
+  border-right: 1px solid rgba(228, 230, 232, 0.6);
+  border-bottom: 1px solid rgba(228, 230, 232, 0.6);
+  position: relative;
+}
+
+@media screen and (max-width: 1450px) {
+  .list-room-calendar .body-content .box {
+    width: calc(100% / 6);
+  }
+  
+}
+@media screen and (max-width: 1300px) {
+  .list-room-calendar .body-content .box {
+    width: calc(100% / 5);
+  }
+  
+}
+@media screen and (max-width: 1150px) {
+  .list-room-calendar .body-content .box {
+    width: calc(100% / 4);
+  }
+  
+}
+
+@media screen and (max-width: 730px) {
+  .list-room-calendar .body-content .box {
+    width: calc(100% / 3);
+  }
+  
+}
+
+@media screen and (max-width: 560px) {
+  .list-room-calendar .body-content .box {
+    width: calc(100% / 2);
+  }
+  
+}
+
+@media screen and (max-width: 420px) {
+  .list-room-calendar .body-content .box {
+    width: 100%;
+  }
+  
+}
+
+.list-room-calendar .body-content .box .numb {
+  font-weight: 600;
+  font-size: 12px;
+  color: #171721;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+.list-room-calendar .body-content .box .box-item {
+  background: #D72650;
+  border-radius: 6px;
+  padding: 12px 11px;
+  margin: 38px 15px;
+  cursor: pointer;
+}
+.list-room-calendar .body-content .box .box-item .name {
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.list-room-calendar .body-content .box .box-item .time {
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 5px 0 1px;
+}
+
+.modal-body .info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.modal-body .info .avt {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #D0DBE5;
+}
+.modal-body .info .avt img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.modal-body .info .info-t .name{
+  font-weight: 600;
+  font-size: 18px;
+  color: #171721;
+  margin: 10px 0 5px;
+}
+.modal-body .info .info-t p {
+  font-weight: 400;
+font-size: 13px;
+color: #D72650;
+padding: 0;
+}
+
+.modal-create h5.t {
+  margin-bottom: 24px;
+}
+.modal-body .form-control.fc-datepicker {
+  height: 36px;
+}
+
+.filter-top .form-control , .filter-top .form-select {
+  background-color: #fff;
+}
+.filter-top .btn.input-group-text {
+  background-color: #fff;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+
+.account-pages {
+  height: 1080px;
+}
+
+.account-pages .content-left {
+  width: 50%;
+}
+.account-pages .content-right {
+  width: 50%;
+}
+
+.account-pages .content-right .images {
+  height: 100%;
+}
+.account-pages .logo {
+  display: block;
+  margin: 24px;
+}
+
+.account-pages .content-left .card-body h4 {
+  font-weight: 700;
+  font-size: 32px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.account-pages {
+  background: #fff;
+}
+
+.account-pages .content-left .card-body p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.account-pages .content-left .card-body p span {
+  color: #151519;
+}
+.account-pages .card-body {
+  padding: 142px 219px 142px 212px;
+}
+
+.otp-code {
+  display: flex;
+}
+.account-pages .card-body form .otp-code .form-control {
+  padding: 0;
+  border: 1px solid #EAEAEA;
+  background: #FAFAFA;
+  border-radius: 12px;
+  width: 85px;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #171717;
+  margin-right: 24px;
+}
+
+.account-pages .card-body form .otp-code .form-control:focus-visible {
+  background: #FAFAFA;
+  border: 1px solid #EAEAEA;
+}
+
+@media screen and (max-width: 1500px) {
+
+  .account-pages .card-body {
+    padding: 142px 80px;
+  }
+  
+}
+
+.account-pages .card-body form .form-label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #151519;
+  margin-bottom: 15px;
+}
+
+.account-pages .card-body form .form-control {
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+  padding: 11px 23px;
+  background: #fff;
+}
+
+.account-pages .card-body form .form-control:focus-visible {
+  border-color: #D72650;
+}
+
+.account-pages .card-body form .text-muted {
+  font-weight: 500;
+  font-size: 16px;
+  color: #151519 !important;
+}
+
+.account-pages .card-body form .text-muted:hover {
+  color: #D72650 !important;
+}
+
+.account-pages .card-body form .btn {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px;
+  color: #D72650;
+  transition: all 0.3s ease-in-out;
+}
+.account-pages .card-body form .btn.active:hover {
+  opacity: .9;
+}
+.account-pages .card-body form .btn.active , .account-pages .card-body form .btn:hover {
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+
+  .account-pages {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .account-pages .card-body {
+    padding: 40px 15px;
+  }
+
+  .account-pages .content-left {
+    width: 100%;
+  }
+
+  .account-pages .content-right {
+    width: 100%;
+  }
+  
+}
+
+.js-countdown {
+  margin: 10px 0;
+  display: block;
+}
+
+.js-countdown .countdown__item {
+  font-weight: 500;
+  font-size: 48px;
+  color: #D72650;
+  margin: 0 20px;
+  position: relative;
+}
+
+.js-countdown .countdown__item::after {
+  content: ':';
+  position: absolute;
+  top: -9px;
+  right: -28px;
+}
+
+.js-countdown .countdown__item:last-child:after {
+  display: none;
+}
+
+.coming-soon #subscribe-form {
+  width: 521px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.coming-soon #subscribe-form .form-label {
+  display: block;
+  color: #D72650;
+}
+
+.coming-soon #subscribe-form input {
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+  padding: 11px 23px;
+  background: #fff;
+  outline: none;
+}
+
+.coming-soon #subscribe-form input:focus-visible {
+  border-color: #D72650;
+}
+
+.booking-list .form-select {
+  margin-bottom: 10px;
+}
+.booking-list .day-top .form-group {
+  margin-left: 0;
+}
+
+.table-responsive td.img-order {
+  min-width: 220px;
+}
+
+.table-responsive td.img-order img {
+  border-radius: 2px;
 }
 /*  */
