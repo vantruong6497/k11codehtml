@@ -19,7 +19,7 @@
       this.$formEvent.removeClass("was-validated"),
       (this.$newEventData = null),
       this.$btnDeleteEvent.show(),
-      this.$modalTitle.text("Edit Event"),
+      this.$modalTitle.text("Asign room"),
       this.$modal.show(),
       (this.$selectedEvent = e.event),
       l("#event-title").val(this.$selectedEvent.title),
@@ -45,14 +45,13 @@
       new FullCalendar.Draggable(document.getElementById("external-events"), {
         itemSelector: ".external-event",
         eventData: function (e) {
-          return { title: e.innerText, description: e.innerText, className: l(e).data("class") };
+          return { title: e.innerText, className: l(e).data("class") };
         },
       });
       var e = [
 
           {
             title: "Anthony Jee 3",
-            description: "Anthony Jee 2",
             start: '2022-08-14T09:30:00' ,
             end: '2022-08-14T10:30:00',
             className: "bg-cancel",

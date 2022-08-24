@@ -343,6 +343,7 @@
           previewImg.parent().css("background", "transparent");
           previewImg.show();
           previewImg.siblings("p").hide();
+          previewImg.siblings("svg").hide();
         };
         reader.readAsDataURL(this.files[0]);
       });
@@ -509,16 +510,24 @@ $('.save').click(function(){
 
 
 
+$('.setting').on('click', function(){
+  $('.setting-content').toggleClass('active');
+});
+
+
+
 $('#edit').click(function(){
   $(this).hide();
-  $('.upload__box').addClass('active');
+  $('.banner.s1').addClass('active');
+  $('.title').attr('contenteditable', 'true');
    
   $('#save').show();
 });
 
 $('#save').click(function(){
   $(this).hide();
-  $('.upload__box').removeClass('active');
+  $('.banner.s1').removeClass('active');
+  $('.title').removeAttr('contenteditable');
   
   $('#edit').show();
 });
